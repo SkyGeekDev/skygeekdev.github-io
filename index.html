@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>一个小惊喜</title>
+    
+    <link type="text/css" rel="stylesheet" href="./source/default.css">
+    <script type="text/javascript" src="./source/jquery.min.js"></script>
+    <script type="text/javascript" src="./source/jscex.min.js"></script>
+    <script type="text/javascript" src="./source/jscex-parser.js"></script>
+    
+    <style type="text/css">
+    </style>
+    <script>
+        var lover = {};
+        lover.info = {
+            name: "摸下爱你的心", //点开时爱心桃旁边的字
+            year: 2017,     //相遇的年份
+            month: 7,      //月
+            day: 15,        //日
+            hour: 20,       //小时
+            minute: 0,     //分钟
+            second: 0,      //秒
+            
+            debug: false,   //是否开启调试模式（如果选是，则会弹窗提示为什么加载出错）
+        }
+    </script>
+</head>
+<body>
+    <!-- 背景音乐部分 -->
+    <audio id="loveBgm" src="love.flac" loop="loop"></audio>
+    
+	<div id="main">
+        <div id="error">
+        </div>
+		<div id="wrap">
+			<div id="text">
+				<div id="code">
+					<span class="say">H At Tc 的赵 520（接受我的告白吧，嘻嘻）</span><br>
+					<span class="say"> </span><br>
+					<span class="say">每次给你打电话都会听到你的笑</span><br>
+					<span class="say"> </span><br>
+					<span class="say">听到你微笑我发现我是这世界最幸福的人</span><br>
+					<span class="say"> </span><br>
+					<span class="say">选文就是为了给你写一封情书</span><br>
+					<span class="say"> </span><br>
+					<span class="say">还没学完就已经发现对你的爱已经无法言语</span><br>
+					<span class="say"> </span><br>
+					<span class="say">You are blooming in my jungle</span><br>
+					<span class="say"> </span><br>
+                    <span class="say">Lighting up a sweet mingle</span><br>
+                    <span class="say"> </span><br>
+                    <span class="say">will I never ever part form you</span><br>
+                    <span class="say"> </span><br>
+                    <span class="say">Till a beckon from the deably angle</span><br>
+                    <span class="say"> </span><br>
+					<span class="say">我愿守护你一辈子</span><br>
+					<span class="say"> </span><br>
+					<span class="say"> </span><br>
+					<span class="say"> -- 爱你的杰 --</span>
+				</div>
+			</div>
+			<div id="clock-box">
+				<span><font color="#666666">小可爱（赵），我们相识已经</font></span>
+				<div id="clock"></div>
+			</div>
+			<canvas id="canvas" width="1100" height="680"></canvas>
+		</div>
+	</div>
+	
+    
+    <script type="text/javascript" src="./source/jscex-jit.js"></script>
+    <script type="text/javascript" src="./source/jscex-builderbase.min.js"></script>
+    <script type="text/javascript" src="./source/jscex-async.min.js"></script>
+    <script type="text/javascript" src="./source/jscex-async-powerpack.min.js"></script>
+    <script type="text/javascript" src="./source/functions.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./source/love.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./source/canvas.js" charset="utf-8"></script>
+</body>
+</html>
